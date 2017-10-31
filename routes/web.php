@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::get('/test', function () {
+	return "hello from the routes/web.php file!";
+});
+
+Route::get('/portfolio/js/weather', function () {
+return view('portfolio.js.weather.index');
+});
