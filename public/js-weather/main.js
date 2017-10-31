@@ -18,7 +18,7 @@ document.onreadystatechange = function() {
 };
 
 function getWeather() {
-	var baseUrl = 'http://api.openweathermap.org/data/2.5/weather?APPID=95fcd1f957be83fbd4972e941c94f9c9&zip=<zipcode_value>';
+	var baseUrl = 'https://api.openweathermap.org/data/2.5/weather?APPID=95fcd1f957be83fbd4972e941c94f9c9&zip=<zipcode_value>';
 
 	console.log( 'baseUrl: %s', baseUrl );
 	console.log( 'zipInput: %s', zipInput.value );
@@ -86,6 +86,8 @@ function catchResponse() {
 function httpRequestOnError() {
 	console.log( 'Request is NOT COOL!' );
 	console.log( apiRequest );
+
+	//errorMessage.innerHTML = ""
 }
 
 function kelvinToC( k ) {
