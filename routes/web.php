@@ -24,5 +24,11 @@ Route::get('/test', function () {
 });
 
 Route::get('/portfolio/js/weather', function () {
-return view('portfolio.js.weather.index');
+	// return view('js-weather.index', [ 'default' => '41501' ] );
+
+	// $default = "40502";
+	// return view('js-weather.index', [ 'default' => $default ] );
+
+	$default = "60007";
+	return view('js-weather.index', compact('default') );	
 });

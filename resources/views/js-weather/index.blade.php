@@ -33,7 +33,7 @@
 	<h1>Awesome Weather</h1>
 
 	<div id="inputForm" class="form-inline">
-		<input type="number" class="form-control" id="zipInput" name="zipInput" placeholder="zipcode">
+		<input type="number" class="form-control" id="zipInput" name="zipInput" placeholder="{{ $default }}">
 		<button type="button" class="btn btn-success" id="weatherButton" onclick="console.log('rrt'); getWeather();">Get Weather</button>
 	</div>
 
